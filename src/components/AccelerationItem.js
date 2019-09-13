@@ -33,35 +33,8 @@ export default function AccelerationItem({ item }) {
           className="close-modal-btn"
           onPress={() => setModalVisible(false)}
         >
-          {/* <Text style={styles.itemDate}>{moment(item.subscription_finish_at).format('DD/MM/YYYY')}</Text> */}
-          {/* <Text>CLOSE</Text> */}
         </TouchableOpacity>
       </Modal>
-
-      {/* <Modal
-        className="modal"
-        animationType="slide"
-        transparent={false}
-        visible={modalVisible}
-        onRequestClose={() => {
-          Alert.alert('Modal has been closed.');
-        }}
-      >
-        <Image
-          style={styles.itemImage}
-          source={{uri: item.banner_url ? item.banner_url : 'http://denrakaev.com/wp-content/uploads/2015/03/no-image.png'}}
-        />
-        <Text style={styles.itemName}>{item.name}</Text>
-        <Text style={styles.itemLocation}>{item.location}</Text>
-
-        <TouchableOpacity
-          className="close-modal-btn"
-          onPress={() => setModalVisible(false)}
-        >
-          <Text style={styles.itemDate}>{moment(item.subscription_finish_at).format('DD/MM/YYYY')}</Text>
-          <Text>CLOSE</Text>
-        </TouchableOpacity>
-      </Modal> */}
     </View>
   );
 }
